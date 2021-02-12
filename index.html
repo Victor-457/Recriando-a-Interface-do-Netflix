@@ -8,9 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-	
+
 	<title>NETFLIX Clone</title>
 </head>
+
 <body>
 	<header>
 		<div class="container-fluid wrapper">
@@ -22,12 +23,11 @@
 				<a class="espaco" href="#">Filmes</a>
 			</nav>	
 		</div>
-		
 	</header>
+
 	<div class="main">
 		<div class="serie-principal">
 			<div class="wrapper-main ">	
-				
 				<h3 class="titulo">
 					THE LAST KINGDOM
 				</h3>
@@ -35,25 +35,34 @@
 				<p class="descricao">
 					Enquanto Alfredo, o Grande, defende seu reino de invasões nórdicas, Uhtred - um saxão criado por vikings - planeja reivindicar o que é seu por direito.
 				</p>
-				<div class="botoes container-fluid ">
-					<!-- Tem que fazer para de um botao interferir na posição do outro-->
-					<button role="button" type="button" class="botao rounded">
+				
+				<div id="botoes" class="container-fluid ">
+					<button role="button" onclick="show_trailer()"  type="button" class="botao rounded">
 						<i class="far fa-play-circle"></i>
 						ASSISTIR TRAILER
 					</button>
-					<button role="button" type="button" class="botao rounded">
+					
+					<button role="button" onclick="show_info()" type="button" class="botao rounded">
 						<i class="fas fa-info-circle"></i>
 						MAIS INFORMAÇÕES
-					</button>
+					</button>		
+
+					<div id="info">
+						<p>4 Temporadas - Duração média: 1h - Ação & Aventura, Drama</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="trailer">
+				<div id="trailer">
+					<iframe id="video" src="https://www.youtube.com/embed/0ZXdPhfMbAw" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="carrousel-filmes">
-		
 		<div class="owl-carousel owl-theme">
-			
 			<div class="item"> <img class="box-filme" src="img/2.jpg"></div>
 			<div class="item"> <img class="box-filme" src="img/3.jpg"></div>
 			<div class="item"> <img class="box-filme" src="img/4.jpg"></div>
@@ -65,10 +74,8 @@
 			<div class="item"> <img class="box-filme" src="img/10.jpg"></div>
 			<div class="item"> <img class="box-filme" src="img/11.jpg"></div>
 		</div>
-		
 	</div>
 	
-
 	<!--JS-->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
